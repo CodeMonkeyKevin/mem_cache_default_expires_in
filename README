@@ -1,0 +1,33 @@
+= MemCacheDefaultExpiresIn
+
++MemCacheDefaultExpiresIn+ is a plugin in that... well the name kind of gives it away.
+
+
+== Install
+
+To install, do:
+
+  script/plugin install git://github.com/CodeMonkeyKevin/mem_cache_default_expires_in.git
+
+== Usage
+
+Installing the plugin add support for default/global expires_in time for mem_cache_store.
+
+config.cache_store = :mem_cache_store,
+                     'localhost',
+                     {:expires_in => 15}
+
+So now all of your fetch request by default have a expires_in time of 15 seconds.
+
+
+== TODO
+
+* Workout more
+
+== Credits
+
+Written by {Kevin Patel}[http://github.com/CodeMonkeyKevin] and {Joshua Borton}[http://github.com/digitaltoad].
+
+== License
+
+MIT License
