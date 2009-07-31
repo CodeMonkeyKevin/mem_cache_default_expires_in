@@ -1,0 +1,1 @@
+require File.join(File.dirname(__FILE__), 'lib', 'mem_cache_default_expires_in')
